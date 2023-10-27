@@ -33,33 +33,28 @@ body {
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid d-flex justify-content-between">
-        <a class="navbar-brand logo-position" href="#">
-          <img src="/images/logo.png" alt="Logo" width="auto" height="180">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Changed max-height to 40px -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/logo.png" alt="SmartEd Logo" class="img-fluid" style="max-height: 80px;">
         </a>
-
-        <div
-          class="collapse navbar-collapse justify-content-end navlinks-position"
-          id="navbarNav"> <!-- Added justify-content-end -->
-          <ul class="navbar-nav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center"> <!-- Added align-items-center to vertically center links -->
             <li class="nav-item">
-              <a class="nav-link" href="index.html">About</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </div>
     </nav>
 
