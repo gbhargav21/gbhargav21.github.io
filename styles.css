@@ -1,0 +1,489 @@
+
+
+.banner-container {
+    background-image: url('/images/banner_2.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+    padding-top: 80px; /* Space for navbar */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(15, 14, 14);
+    font-family: 'Alex Brush', cursive;
+}
+
+.overlay-text h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.overlay-text p {
+    font-size: 3.5rem;
+}
+
+.overlay-text {
+    font-size: 1vw; /* Adjust this value according to your needs */
+}
+
+@media (max-width: 600px) { /* Breakpoint for smaller screens */
+    .overlay-text h1 {
+        font-size: 2rem; /* Adjust this value for mobile size */
+    }
+    .overlay-text p {
+        font-size: 1.5rem; /* Adjust this value for mobile size */
+    }
+    .overlay-text {
+        font-size: 4vw; /* Adjust this value according to your needs on mobile */
+    }
+}
+
+
+
+
+
+.navbar {
+    position: fixed; /* Make the navbar fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    z-index: 1000; /* Ensure navbar is always on top */
+}
+
+.navbar.scrolled {
+    background-color: rgba(220, 204, 204, 0.9);
+}
+
+.nav-link {
+    color: white;
+    transition: color 0.5s;
+    text-shadow: 2px 2px 4px rgba(71, 11, 200, 0.5);
+    font-size: 1.4rem;  /* Increased font size */
+    font-weight: bold;  /* Bold font */
+}
+
+.navbar.scrolled .nav-link {
+    color: #333;
+    text-shadow: none;
+}
+
+.container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    padding-top: 80px;  /* Adjust based on the height of your navbar */
+}
+/* CSS */
+
+/* If you want to add an overlay for better text readability */
+footer.bg-dark {
+background: linear-gradient(rgba(208, 205, 205, 0.6), rgba(0,0,0,0.6)), url('/images/footer.svg');
+color: #fff;
+background-size: contain;  /* Ensure the image fits inside the footer */
+background-repeat: no-repeat;  /* Prevent image from repeating */
+background-position: center;  /* Center the image */
+}
+.centered-logo .navbar-brand {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+z-index: 2;
+}
+
+.logo-position {
+position: absolute;
+top: 80%;  /* Adjust this value to move logo up or down */
+left: 30%; /* Adjust this value to move logo left or right */
+transform: translate(-50%, -50%); /* This centers the logo at the specified top and left values */
+}
+
+.navbar-toggler {
+order: 1;  /* This will make sure the toggler appears on the right of the logo */
+}
+
+/* Media query for small screens to adjust logo and navbar positions */
+@media (max-width: 992px) {  /* Adjust breakpoint if needed */
+.logo-position {
+position: static;
+transform: none;
+}
+
+.navlinks-position {
+position: static;
+text-align: right;  /* Align nav links to right */
+}
+}
+.navbar-toggler {
+z-index: 3;  /* Ensure it's above navbar-brand and navlinks-position */
+position: absolute; /* To make sure we can position it exactly where we want */
+top: 10px; 
+right: 5%;
+}
+
+/* Adjust the z-index for logo and nav links to make sure they are beneath the toggler button */
+.logo-position {
+z-index: 2;
+}
+
+.navlinks-position {
+z-index: 1;
+}
+.container h2 {
+margin-bottom: 30px;
+font-weight: bold;
+color: #6b3e26; /* adjust as per your theme */
+}
+
+.container h4 {
+color: #6b3e26; /* adjust as per your theme */
+}
+
+.col-md-4:hover {
+transform: scale(1.05); /* slight zoom on hover */
+transition: transform 0.3s;
+}
+
+.img-fluid {
+border-radius: 50%; /* circular images */
+box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* subtle shadow */
+}
+.btn-primary {
+background-color: #6b3e26; /* adjust to fit your theme */
+border-color: #6b3e26; /* adjust to fit your theme */
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+font-weight: bold;
+transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+background-color: #5a321f; /* slightly darker shade on hover */
+border-color: #5a321f; /* slightly darker shade on hover */
+}
+.dish-card {
+position: relative;
+overflow: hidden;
+transition: transform 0.3s;
+border-radius: 10px;
+}
+
+.dish-card:hover {
+transform: scale(1.05);
+}
+
+.dish-image {
+transition: opacity 0.3s;
+}
+
+.dish-card:hover .dish-image {
+opacity: 0.8;
+}
+
+.dish-name {
+position: absolute;
+bottom: 10px;
+left: 10px;
+background-color: rgba(0, 0, 0, 0.6);
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+}
+
+
+
+/* --- */
+
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.text-description {
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+.text-description:hover {
+    background-color: #f5f5f5;
+}
+
+.text-description h2 {
+    border-bottom: 3px solid #FDBB30;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.text-description p.intro-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.text-description ul.menu-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.text-description li {
+    padding: 8px 10px;
+    color: #0e0d0d; /* Changing the text color to white */
+    font-weight: bold; /* Making the text bold */
+    background-color: #d2cdcd; /* Dark background for contrast */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 8px; /* Some margin to space them out */
+    transition: background-color .3s, transform .2s; /* Animations for hover */
+
+   
+}
+
+.text-description li:hover {
+    background-color: #f6ad47; /* Golden color on hover */
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+.biryani-section {
+    align-items: center; /* Center align the content vertically */
+}
+
+.mt-5 {
+    margin-top: 50px; /* Increasing space between sections */
+}
+.menus {
+    background: linear-gradient(45deg, #f3f4f6 12%, transparent 0, transparent 50%, #f3f4f6 0, #f3f4f6);
+    background-size: 15px 15px;
+}
+.menu-heading-container {
+        text-align: center;
+        padding: 20px 0;
+        margin-bottom: 30px;
+        background-color: #fff8e7; /* Light cream background for contrast */
+        border-radius: 10px; /* Rounded edges for a touch of sophistication */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    }
+
+    /* .menu-heading {
+        font-family: 'Lobster', cursive;
+        font-size: 2.5em;
+        color: #d43d00;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    } */
+
+
+    .menu-heading-container {
+        text-align: center;
+        padding: 30px 0;
+        margin-bottom: 30px;
+        background-color: #fff8e7; /* Light cream background for contrast */
+        border-radius: 10px; /* Rounded edges */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    }
+
+    .menu-heading {
+        
+        font-family: 'Dancing Script', cursive;
+        font-size: 5.5em;
+        color: #d43d00;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: slideFade 1.5s forwards 0.5s;
+    }
+
+    .menu-subheading {
+        font-family: Arial, sans-serif;
+        font-size: 1.2em;
+        color: #555;
+        margin-top: 10px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideFade 1.5s forwards 2s;
+    }
+
+    @keyframes slideFade {
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .action-buttons {
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    z-index: 1000;
+}
+
+.action-buttons {
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    z-index: 1000;
+}
+
+.button-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.action-buttons a {
+    display: block;
+    background-color: #fefffe;
+    color: rgb(163, 0, 0);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.action-buttons a .button-label {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: left 0.3s, opacity 0.2s;
+}
+
+.action-buttons a:hover {
+    padding-right: 120px;
+}
+
+.action-buttons a:hover .button-label {
+    left: 70px;
+    opacity: 1;
+}
+
+.action-buttons .call-button {
+    background-color: #e5a7a7;
+}
+/* --- */
+
+/* Contact Us Section Styles */
+.contact_us_section {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light background to make it stand out subtly */
+}
+
+/* Contact Details & Operating Hours */
+.contact_us_section h3 {
+    font-weight: 600;
+    border-bottom: 2px solid #ddd; /* Underline for headers */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.contact_us_section p, .contact_us_section ul {
+    margin-bottom: 20px;
+}
+
+.contact_us_section strong {
+    font-weight: 600; /* Emphasizing labels like Address, Email, etc. */
+}
+
+.contact_us_section a {
+    text-decoration: none;
+    border-bottom: 1px dotted; /* Subtle underline for links */
+}
+
+.contact_us_section a:hover {
+    border-bottom-style: solid; /* Solid underline on hover for better emphasis */
+}
+
+/* Google Map */
+.contact_us_section iframe {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow to lift the map */
+    border-radius: 8px; /* Rounded corners for map */
+}
+
+/* Contact Form */
+.contact_us_section form {
+    background-color: #ffffff; 
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow to emphasize the form */
+    border-radius: 8px; /* Rounded corners for form */
+}
+
+.contact_us_section form .form-label {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact_us_section form .form-control {
+    box-shadow: none; /* Removing default bootstrap shadow */
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Slightly rounded corners for input fields */
+    margin-bottom: 20px;
+}
+
+.contact_us_section form .btn {
+    border-radius: 4px; /* Slightly rounded corners for button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact_us_section form .btn:hover {
+    background-color: #ddd; /* Subtle hover effect for button */
+}
+.contact_us_section {
+    background-color: #f9f9f9;
+    background-image: repeating-linear-gradient(
+      60deg,
+      #ececec,
+      #ececec 1px,
+      transparent 1px,
+      transparent 10px
+    );
+}
+.contact-header {
+    font-family: 'Playfair Display', serif;  /* A classy serif font */
+    text-transform: uppercase;  /* Converts text to uppercase */
+    letter-spacing: 2px;  /* Spacing between letters */
+    font-size: 2.5em;  /* Size of the font */
+    text-align: center;  /* Center align the heading */
+    margin-bottom: 20px;  /* Spacing after the heading */
+    position: relative;  /* To position the underline */
+}
+
+.contact-header::after {  /* Adds a stylish underline */
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 50%;
+    background-color: #333;  /* Dark color for the underline */
+}
+
+/* --- */
